@@ -30,3 +30,17 @@ if (hacker1.toLowerCase() == hacker2.toLowerCase()) {
 }else{
     console.log("Yo, the navigator goes first, definitely.");
 }
+
+// Bonus 2 
+
+let isPalindromo = true;
+const isWord = "racecar";
+for(let i = 0, j = isWord.length - 1; i < j; i++, j--) {
+    if (isWord[i] == isWord[j]) {
+        continue;
+    } else {
+        isPalindromo = false;
+        break
+    }
+}
+console.log(isPalindromo ? "Es un palíndromo" : "No es un palíndromo")
