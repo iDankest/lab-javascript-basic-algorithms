@@ -10,3 +10,13 @@ else if(hacker1.length > hacker2.length) console.log(`The driver has the longest
 else console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
 
 // Iteration 3: Loops
+let nameUpper = ""
+for (let i = 0; i < hacker1.length; i++){
+    nameUpper += hacker1[i].toUpperCase() + " "
+}
+console.log(nameUpper)
+nameUpper = ""
+for(i = hacker1.length - 1; i >= 0; i--){
+    nameUpper += hacker1[i];
+}
+console.log(nameUpper)
