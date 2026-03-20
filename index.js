@@ -10,13 +10,23 @@ else if(hacker1.length > hacker2.length) console.log(`The driver has the longest
 else console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
 
 // Iteration 3: Loops
+//Iteration 3.1
 let nameUpper = ""
 for (let i = 0; i < hacker1.length; i++){
     nameUpper += hacker1[i].toUpperCase() + " "
 }
 console.log(nameUpper)
+//iteration 3.2
 nameUpper = ""
-for(i = hacker1.length - 1; i >= 0; i--){
-    nameUpper += hacker1[i];
+for(i = hacker2.length - 1; i >= 0; i--){
+    nameUpper += hacker2[i];
 }
 console.log(nameUpper)
+//Iteration 3.3
+if (hacker1.toLowerCase() == hacker2.toLowerCase()) {
+    console.log("What?! You both have the same name?")
+} else if (hacker1.toLowerCase() < hacker2.toLowerCase()) {
+    console.log("The driver's name goes first.");
+}else{
+    console.log("Yo, the navigator goes first, definitely.");
+}
